@@ -26,7 +26,7 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = isSignInPage ? 'http://localhost:8000/api/login' : 'http://localhost:8000/api/register';
+        const url = isSignInPage ? 'https://talkme-3backend.onrender.com/api/login' : 'https://talkme-3backend.onrender.com/api/register';
 
         try {
             const res = await fetch(url, {
