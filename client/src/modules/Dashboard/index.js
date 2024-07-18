@@ -20,7 +20,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     console.log('Setting up socket...');
-    const newSocket = io('http://localhost:8080');
+    const newSocket = io('https://talkme-3backend.onrender.com:8080');
     setSocket(newSocket);
 
     newSocket.emit('addUser', user?.id);
